@@ -11,7 +11,9 @@ $books = $books ?? [];
   <button>بحث</button>
 </form>
 
-<form method="post" action="/?controller=book&action=add">
+<!-- /?controller=book&action=add -->
+<!-- <form method="post" action="/?controllers=book&action=add"> -->
+<form method="post" action="/Library-MVC/app/public/?controller=book&action=add">
   <input name="title" placeholder="العنوان" required>
   <input name="author" placeholder="المؤلف" required>
   <input name="copies" type="number" min="1" value="1">
